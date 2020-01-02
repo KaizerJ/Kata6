@@ -1,6 +1,7 @@
 package control;
 
 import model.Square;
+import view.Point;
 
 public class ResetCommand implements Command {
     private final Square square;
@@ -11,8 +12,7 @@ public class ResetCommand implements Command {
     
     @Override
     public void execute() {
-        square.setPosX(0);
-        square.setPosY(0);
+        square.setPos(new Point(square.getBoundX()/2,square.getBoundY()/2));
     }
     
 }

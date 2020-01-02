@@ -1,6 +1,7 @@
 package control;
 
 import model.Square;
+import view.Point;
 
 public class MoveRightCommand implements Command{
     private final Square square;
@@ -11,7 +12,8 @@ public class MoveRightCommand implements Command{
     
     @Override
     public void execute() {
-        square.setPosX(square.getPosX() + 5);
+        square.setPos(new Point(square.getPosX() + square.getBoundX()/10,
+                                square.getPosY()));
     }
     
 }
