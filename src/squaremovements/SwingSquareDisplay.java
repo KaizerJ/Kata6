@@ -78,7 +78,6 @@ public class SwingSquareDisplay extends JPanel implements SquareDisplay {
     
     private boolean isTouching(int x, int y){
         boolean v = isInside(point, new Point(x,y), squareSize);
-        System.out.println(v);
         return v;
     }
 

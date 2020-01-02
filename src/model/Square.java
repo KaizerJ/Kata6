@@ -1,6 +1,6 @@
 package model;
 
-import control.Observer;
+import presenter.Observer;
 import java.util.ArrayList;
 import java.util.List;
 import view.Point;

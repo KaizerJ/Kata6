@@ -1,6 +1,5 @@
 package presenter;
 
-import control.Observer;
 import model.Square;
 import view.Point;
 import view.SquareDisplay;
